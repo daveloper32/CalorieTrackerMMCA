@@ -106,3 +106,7 @@ dependencies {
     kaptAndroidTest(DaggerHilt.hiltCompiler)
     androidTestImplementation(Testing.testRunner)
 }
+
+configurations.all {
+    exclude(group = "com.linkedin.dexmaker", module = "dexmaker")
+}
